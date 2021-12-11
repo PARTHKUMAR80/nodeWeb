@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#{title}</title>
+
+    style
+        include ../static/style.css
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Home</li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+    </nav>
+    <h1>This is a heading</h1>
+    <p>
+        | #{content}
+        <!-- This is a plain html in using pug -->
+    </p>
+    <div class="container">
+        <h1>Fill this form now</h1>
+        <form action="/" id="contact" method="post">
+            <input type="text" name="names" placeholder="enter your name">
+            <input type="text" name="age" placeholder="enter your age">
+            <input type="text" name="gender" placeholder="enter your gender">
+            <textarea id="address" name="address" cols="30" rows="5" placeholder="enter your address"></textarea>
+            <textarea name="more" id="more" cols="30" rows="5" placeholder="enter your interest"></textarea>
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
